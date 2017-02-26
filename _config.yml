@@ -25,7 +25,7 @@ linkedin_username: edgriebel
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-time-machine
+theme: jekyll-theme-slate
 gems:
   - jekyll-feed
 exclude:
