@@ -9,16 +9,38 @@ tags:
    - Jekyll
    - Ruby
 ---
+![jekyll](wp-content/uploads/2017/jekyll.png)
 # Overall thoughts
 Jekyll is complicated! I had a very hard time convering an existing Wordpress
-blog to Jekyll (~20 hours), and I'm still not happy with the theme.
+blog to Jekyll (15-20 hours+), and I'm still not happy with the theme.
+
+Theming in Jekyll is way harder than in Wordpress. Wordpress is click-click to change
+to a new theme and even just a single click to preview. The way with Jekyll is
+to 
+1. clone someone else's github repo with a style you like 
+2. copy `_posts` directory into the clone 
+3. copy static/asset content to the clone
+4. figure out what layout they use in their posts and pages and change appropriately
+ - Alternatively one can make an alias, if you use layout mypost, create `_layouts/mypost.html`:
+> ---
+> layout: themepost # the layout specified in the new theme
+> ---
+> {{ content }}
+5. run `jekyll serve` multiple times until all bugs are exorcised
+6. Clever people will do this on a different branch and have github serve up the branch temporarily
 
 When there are any errors in the numerous cookbook-style blogs about how to convert,
 there is a lot to know about Ruby, Jekyll, `bundle`, `Gemfile`s, RubyGems, etc.
 to get all the moving parts working.
 
+Jekyll does not work well with Windows. Most of the blogs say this, and I agree _do not use windows_
+for Jekyll. The toolchain just doesn't work well for anything more complicated than the
+default `minima` theme. 
+Things went much smoother when I set up a linux vm in VirtualBox on my windows box,
+but there were still some gotchas when getting github previews working.
+
 # Exporting from existing wordpress blog
-This was tons of trouble. It seems that the exporter I used (_fill in blank_)
+This was tons of trouble. It seems that the [wordpress exporter] I used
 would export the post content and images, etc. but doesn't preserve
 the theme. When the `_posts` contents copied into a newly-initialized
 `jekyll new testblog`, there are errors about specified layouts not found.
@@ -27,7 +49,7 @@ make changes in `_config.yml`, and futz with stuff to get `jekyll build` to comp
 Some of the problems could also have been because of trying to use Windows. **DO NOT USE WINDOWS!!**
 
 
-# Steps to get Jekyll working on Ubuntu MATE
+# Steps to get Jekyll working with Github themes (a.k.a. github "preview") on Ubuntu MATE
 **Do not try to use Windows until you _completely_ understand Jekyll!!!**
 
 ## Install requisite libraries to preview github-themed pages
@@ -51,8 +73,8 @@ gem uninstall jekyll
 
 ## Troubleshooting Notes
 `Gemfile.lock` is required to be in the repo. 
-It is NOT a lockfile to prevent multiple edits, but a listing of 
-all the library versions used the last time `gem update` was run.
+It is NOT a lockfile to prevent multiple edits as I initially assumed, 
+but a listing of all the [gem versions] used the last time `gem update` was run.
 
 Most of the github themes don't list an individual page's 
 title at the top of the page. The `default.html` page was copied from the
@@ -68,3 +90,7 @@ Github uses and `github-pages` requires this version.
 
 _NOTE_ that jekyll __does not__ run on Windows with this arrangement even if 
 Ruby and Jekyll are installed.
+
+[jekyll]: https://jekyllrb.com/
+[wordpress exporter]: https://wordpress.org/plugins/jekyll-exporter/
+[gem versions]: http://stackoverflow.com/a/7518215/3889
