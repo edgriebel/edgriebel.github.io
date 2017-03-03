@@ -74,7 +74,7 @@ gem uninstall jekyll
 ## Troubleshooting Notes
 `Gemfile.lock` is required to be in the repo. 
 It is NOT a lockfile to prevent multiple edits as I initially assumed, 
-but a listing of all the [gem versions] used the last time `gem update` was run.
+but a listing of all the [gem] [versions] used the last time `gem update` was run.
 
 Most of the github themes don't list an individual page's 
 title at the top of the page. The `default.html` page was copied from the
@@ -93,4 +93,5 @@ Ruby and Jekyll are installed.
 
 [jekyll]: https://jekyllrb.com/
 [wordpress exporter]: https://wordpress.org/plugins/jekyll-exporter/
-[gem versions]: http://stackoverflow.com/a/7518215/3889
+[gem]: http://stackoverflow.com/a/7518215/3889
+[versions]: http://stackoverflow.com/a/21527203/3889
