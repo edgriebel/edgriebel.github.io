@@ -15,27 +15,31 @@ Jekyll is complicated! I had a very hard time convering an existing Wordpress
 blog to Jekyll. It took 15-20 hours because of futzing with themes, 
 working around firewalls, false starts with running Jekyll in Windows, etc. 
 
-I'm still not happy with the theme.  
+I'm still not happy with the theme.
 Theming in Jekyll is way harder than in Wordpress. Wordpress is click-click to change
 to a new theme and even just a single click to preview. The way with Jekyll is
 to:
-1. clone someone else's github repo with a style you like 
-2. copy `_posts` directory into the clone 
+1. clone someone else's github repo with a style you like
+2. copy `_posts` directory into the clone
 3. copy static/asset content to the clone
 4. figure out what layout they use in their posts and pages and change appropriately
-	- Alternatively one can make an alias, if you use layout mypost, create `_layouts/mypost.html`:
-> ---
-> layout: themepost # the layout specified in the new theme
-> ---
-> {{ content }}
 5. run `jekyll serve` multiple times until all bugs are exorcised
 6. Clever people will do this on a different branch and have github serve up the branch temporarily
+
+Instead of changing every post, one can make an alias, if you use layout "mypost", create `_layouts/mypost.html`:
+~~~~
+---
+layout: themepost # the layout specified in the new theme
+---
+{% raw %}{{ content }}{% endraw %}
+
+~~~~
 
 When there are any errors in the numerous cookbook-style blogs about how to convert,
 there is a lot to know about Ruby, Jekyll, `bundle`, `Gemfile`s, RubyGems, etc.
 to get all the moving parts working.
 
-Jekyll does not work well with Windows. Most of the blogs say this, and I agree _do not use windows_
+Jekyll does not work well with Windows. Most of the blogs say this, and I agree, _do not use windows_
 for Jekyll. The toolchain just doesn't work well for anything more complicated than the
 default `minima` theme. 
 Things went much smoother when I set up a linux vm in VirtualBox on my windows box,
@@ -71,7 +75,9 @@ gem install therubyracer # For coffeescript used by github-pages build
 # need to remove newer version of Jekyll as github pages supports older version
 gem uninstall jekyll 
 # choose newer version from list
-~~~~~~~~~
+~~~~
+
+At some point this could probably be turned into a [Vagrant](https://www.vagrantup.com/) vm-based dev env.
 
 ## Troubleshooting Notes
 `Gemfile.lock` is required to be in the repo. 
@@ -91,7 +97,8 @@ Need to fix `gem "jekyll", "~> 3.3"` because this is the version that
 Github uses and `github-pages` requires this version.
 
 _NOTE_ that jekyll __does not__ run on Windows with this arrangement even if 
-Ruby and Jekyll are installed.
+Ruby and Jekyll are installed due to therubyracer and native libraries required
+by github-pages.
 
 [jekyll]: https://jekyllrb.com/
 [wordpress exporter]: https://wordpress.org/plugins/jekyll-exporter/
