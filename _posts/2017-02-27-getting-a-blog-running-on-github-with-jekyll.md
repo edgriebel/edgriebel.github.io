@@ -5,15 +5,18 @@ author: edgriebel
 layout: post
 permalink: /first-jekyll/
 tags:
-   - Blogging
-   - Jekyll
-   - Ruby
+   - blogging
+   - jekyll
+   - ruby
+   - ubuntu
 ---
-![jekyll](wp-content/uploads/2017/jekyll.png)
 # Overall thoughts
+<div style="float: right" markdown="1">
+![jekyll](../wp-content/uploads/2017/jekyll.png){:width="250px"}
+</div>
 Jekyll is complicated! I had a very hard time convering an existing Wordpress
 blog to Jekyll. It took 15-20 hours because of futzing with themes, 
-working around firewalls, false starts with running Jekyll in Windows, etc. 
+working around firewalls, false starts with running Jekyll in Windows, etc.<!--more--> 
 
 I'm still not happy with the theme.
 Theming in Jekyll is way harder than in Wordpress. Wordpress is click-click to change
