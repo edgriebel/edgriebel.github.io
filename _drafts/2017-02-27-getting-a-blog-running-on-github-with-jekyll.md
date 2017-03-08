@@ -12,16 +12,18 @@ tags:
 ![jekyll](wp-content/uploads/2017/jekyll.png)
 # Overall thoughts
 Jekyll is complicated! I had a very hard time convering an existing Wordpress
-blog to Jekyll (15-20 hours+), and I'm still not happy with the theme.
+blog to Jekyll. It took 15-20 hours because of futzing with themes, 
+working around firewalls, false starts with running Jekyll in Windows, etc. 
 
+I'm still not happy with the theme.  
 Theming in Jekyll is way harder than in Wordpress. Wordpress is click-click to change
 to a new theme and even just a single click to preview. The way with Jekyll is
-to 
+to:
 1. clone someone else's github repo with a style you like 
 2. copy `_posts` directory into the clone 
 3. copy static/asset content to the clone
 4. figure out what layout they use in their posts and pages and change appropriately
- - Alternatively one can make an alias, if you use layout mypost, create `_layouts/mypost.html`:
+	- Alternatively one can make an alias, if you use layout mypost, create `_layouts/mypost.html`:
 > ---
 > layout: themepost # the layout specified in the new theme
 > ---
