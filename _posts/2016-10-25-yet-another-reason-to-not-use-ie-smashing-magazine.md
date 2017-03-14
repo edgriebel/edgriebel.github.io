@@ -13,9 +13,10 @@ tags:
 ---
 This must be reason #84 at this point to use anything (even Opera) instead of IE...<!--more-->
 
-<div style="text-align:right; float: right" width="150" height="150" markdown="1">
-![ie6](../wp-content/uploads/2016/10/IE6-150x150.png)
-</div>
+{:right: style="float: right" width="150px"}
+![ie6](../wp-content/uploads/2016/10/IE6-150x150.png)\\
+*"Microsoft Standards"*
+{:right}
 > 512 MAGICAL BYTES: This is, hands down,
 > one of the strangest quirks I have ever encountered in web development. 
 > You must ensure that the total size of your 404.html page is greater than 512 bytes, because if it isn’t, Internet Explorer will disregard it and show a generic browser 404 page instead. When I finally figured this out, I had to crack open a beer to cope with the amount of time it took.

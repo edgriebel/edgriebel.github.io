@@ -1,6 +1,6 @@
 ---
 id: 149
-title: 'NTLM Proxies are the Devil&#8217;s spawn'
+title: 'NTLM Proxies are the Devil''s spawn'
 date: 2016-09-15T11:34:25+00:00
 author: edgriebel
 layout: post
@@ -11,7 +11,10 @@ categories:
 tags:
   - pain-points
 ---
-[caption id="" align="alignright" width="250"]<img class="" src="https://cdn.meme.am/instances/41007948.jpg" alt="Very Evil Firewall" width="250" height="202" /> This is probably how NTLM proxy firewalls were conceived[/caption]
+{:left: width="250px" style="float: left"}
+![Very Evil Firewall](https://cdn.meme.am/instances/41007948.jpg){:width="250px"}\\
+*how NTLM proxies were conceived*
+{:left}
 
 Even though most developer apps recognize and support proxies, they all require some sort of configuration either on the commandline, through environment vars (e.g. <code>http_proxy</code>) or via a configuration file. Setting up a non-encrypting proxy is tedious, but none in my experience support <a href="https://en.wikipedia.org/wiki/NT_LAN_Manager" target="_blank">NTLM-based</a> authentication. The process for getting these apps to talk across a proxied firewall is painful.
 <!--more-->

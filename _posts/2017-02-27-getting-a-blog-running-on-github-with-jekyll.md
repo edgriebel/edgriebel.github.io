@@ -11,10 +11,11 @@ tags:
    - ubuntu
 ---
 # Overall thoughts
-<div style="float: right" markdown="1">
-![jekyll](../wp-content/uploads/2017/jekyll.png){:width="250px"}
-</div>
-Jekyll is complicated! I had a very hard time convering an existing Wordpress
+{:right: style="float: right" width="250px"}
+![jekyll](../wp-content/uploads/2017/jekyll.png){:width="250px"}\\
+*With special Ruby Powers!*
+{:right}
+Jekyll is complicated! I had a very hard time converting an existing Wordpress
 blog to Jekyll. It took 15-20 hours because of futzing with themes, 
 working around firewalls, false starts with running Jekyll in Windows, etc.<!--more--> 
 
