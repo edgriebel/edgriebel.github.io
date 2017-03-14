@@ -41,3 +41,4 @@ exclude:
   - Gemfile
   - Gemfile.lock
         
+permalink: /:categories/:year/:month/:title/
