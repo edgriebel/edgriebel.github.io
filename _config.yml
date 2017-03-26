@@ -41,4 +41,5 @@ exclude:
   - Gemfile
   - Gemfile.lock
         
+# Should this be just :year-:title? /:year/:title? /:title?
 permalink: /:categories/:year/:month/:title/

@@ -1,5 +1,10 @@
+---
+layout: post
+categories:
+  - bureaucracy
+---
 After spending $200 on approvals and other bureaucracy to send a t-shirt to someone (acrophyal?), 
-HootSuite CEO appoints a "Czar of Bad Systems", Czar Noel, charged with helping 
+HootSuite CEO appoints a "Czar of Bad Systems", Czar Noel, who is charged with helping 
 "cut the proverbial 'red tape' that is often cursed but rarely challenged".
 
 >In a company of 1,000 people, we’re talking about hundreds
@@ -7,10 +12,10 @@ of employee hours saved over a year’s time–just on ordering swag.
 Once I realized that, the gears started turning: How much time and 
 money were being tied up in other bad and broken processes–simple 
 stuff that was eminently fixable, but that no one was looking into?
+<!--more-->
 
-This reminds me of how Security, Ergonomics, personalized IT, and other bureaucracies 
-work at some companies. Rarely is the _Opportunity Cost_ considered, usually only the 
-bottom line is considered. 
+This reminds me of how Security, Ergonomics, standardized IT, and other bureaucracies 
+work at some companies. When decisions are made about standards, processes, forms/paperwork, etc., rarely the _Opportunity Cost_ of these decisions is considered. 
 
 As an example of bureaucracy trumping usage, my company blocks any website in a [non-Generic TLD] not 
 reviewed and categorized by our [proxy provider]. Sounds like a good idea, except that when doing any
