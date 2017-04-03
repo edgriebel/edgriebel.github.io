@@ -19,13 +19,15 @@ name: Java Gems
 description: > # this means to ignore newlines until "baseurl:"
   Just another Jekyll site
 
+show_downloads: false
+
 twitter_username: edgriebel
 github_username: edgriebel
 linkedin_username: edgriebel
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-time-machine ## bug in post title uses site title
+# theme: jekyll-theme-time-machine ## bug in post title uses site title
 # pretty plain! theme: jekyll-theme-slate
 # Too Minimal!! theme: jekyll-theme-minimal
 # theme: jekyll-theme-minimal
@@ -33,6 +35,7 @@ theme: jekyll-theme-time-machine ## bug in post title uses site title
 # theme: minima
 # theme: jekyll-theme-tactile
 # theme: jekyll-theme-cayman
+theme: jekyll-theme-modernist
 
 
 gems:
@@ -41,5 +44,5 @@ exclude:
   - Gemfile
   - Gemfile.lock
         
-# Should this be just :year-:title? /:year/:title? /:title?
-permalink: /:categories/:year/:month/:title/
+# Should this be :year-:title? /:year/:month/:title? /:year/:title? /:title?
+permalink: /:categories/:year-:title/
