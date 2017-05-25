@@ -1,6 +1,6 @@
 ---
 id: 130
-title: 'The Registration Test Results Netflix Never Expected &#8211; DZone Mobile'
+title: 'The Registration Test Results Netflix Never Expected'
 date: 2016-01-13T08:44:17+00:00
 author: edgriebel
 layout: post

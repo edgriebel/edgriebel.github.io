@@ -30,4 +30,4 @@ Since auditing seems to not be working as I expected (possibly because google-wh
 	<li>run <i>begin dbms_mview.explain_rewrite('&lt;the query&gt;', 'MVIEW_NAME', to_char(sysdate, 'yyyy-mm-dd-hh24:mi:ss.ssss')); end;</i></li>
 	<li>Look at the results in the REWRITE_TABLE: <em>select * from rewrite_table order by 1 desc;</em></li>
 </ol>
-&nbsp;
+
