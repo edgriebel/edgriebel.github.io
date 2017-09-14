@@ -36,7 +36,7 @@ markdown: kramdown
 # theme: jekyll-theme-tactile
 # theme: jekyll-theme-cayman
 theme: jekyll-theme-modernist
-
+repository: edgriebel/edgriebel.github.io
 
 gems:
   - jekyll-feed
