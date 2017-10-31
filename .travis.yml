@@ -1,0 +1,9 @@
+language: ruby
+rvm:
+  - 2.3.3
+
+install: gem install jekyll
+
+script: bundle exec jekyll build
+
+sudo: false
