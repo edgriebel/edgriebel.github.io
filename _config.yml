@@ -35,7 +35,8 @@ markdown: kramdown
 # theme: minima
 # theme: jekyll-theme-tactile
 # theme: jekyll-theme-cayman
-theme: jekyll-theme-modernist
+# theme: jekyll-theme-modernist
+theme: jekyll-theme-leap-day
 repository: edgriebel/edgriebel.github.io
 
 gems:
