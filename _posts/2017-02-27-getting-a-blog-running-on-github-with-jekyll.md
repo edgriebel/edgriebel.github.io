@@ -104,6 +104,55 @@ _NOTE_ that jekyll __does not__ run on Windows with this arrangement even if
 Ruby and Jekyll are installed due to therubyracer and native libraries required
 by github-pages.
 
+# Update for new environment 2018-11-01:
+~~~~ bash
+# install dependencies that will be needed by ruby-build
+sudo apt install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev
+
+# use rbenv
+sudo apt install rbenv
+
+# Add rbenv to .bashrc
+rbenv init 2>> ~/.bashrc
+. ~/.bashrc
+
+# verify setup (repeatedly to fix errors)
+curl -fsSL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-doctor | bash
+
+sudo apt install ruby-build
+
+rbenv install --list
+# old versions, so we need to update versions
+git clone https://github.com/rbenv/rbenv-default-gems.git ~/.rbenv/plugins/rbenv-default-gems
+git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+
+# install good ruby
+rbenv install 2.5.3
+
+# still getting /var/lib/gems errors:
+gem install bundler
+# wrong directory:
+gem env home
+
+# Install plugin that sets it to local dirs
+git clone https://github.com/jf/rbenv-gemset.git $HOME/.rbenv/plugins/rbenv-gemset
+
+# set up paths again
+. ~/.bashrc
+# verify..
+gem env home
+
+# installs all the gems specified in Gemfile
+bundle install
+
+gem install jekyll
+
+gem update jekyll
+
+bundle update
+
+~~~~
+
 [jekyll]: https://jekyllrb.com/
 [wordpress exporter]: https://wordpress.org/plugins/jekyll-exporter/
 [gem]: http://stackoverflow.com/a/7518215/3889
