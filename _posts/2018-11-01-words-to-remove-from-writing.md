@@ -1,5 +1,4 @@
 ---
-layout: post
 categories:
   - personal-development
 title: Words to Cut from Writing

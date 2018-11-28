@@ -3,7 +3,6 @@ id: 55
 title: 'The most unusual place you&#8217;ve written code'
 date: 2014-06-04T09:44:48+00:00
 author: edgriebel
-layout: post
 guid: http://www.edgriebel.com/?p=55
 permalink: /the-most-unusual-place-youve-written-code/
 categories:

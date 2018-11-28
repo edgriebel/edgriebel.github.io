@@ -3,7 +3,6 @@ id: 115
 title: CareerBuilder listings used as Phishing platform
 date: 2015-04-30T12:48:39+00:00
 author: edgriebel
-layout: post
 guid: http://www.edgriebel.com/?p=115
 permalink: /careerbuilder-listings-used-as-phishing-platform/
 categories:

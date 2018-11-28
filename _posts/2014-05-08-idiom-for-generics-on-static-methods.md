@@ -3,7 +3,6 @@ id: 40
 title: Idiom for generics on static methods
 date: 2014-05-08T09:21:40+00:00
 author: edgriebel
-layout: post
 guid: http://www.edgriebel.com/?p=40
 permalink: /idiom-for-generics-on-static-methods/
 categories:

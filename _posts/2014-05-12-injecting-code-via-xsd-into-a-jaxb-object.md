@@ -3,7 +3,6 @@ id: 46
 title: Injecting code via xsd into a jaxb object
 date: 2014-05-12T14:18:33+00:00
 author: edgriebel
-layout: post
 guid: http://www.edgriebel.com/?p=46
 permalink: /injecting-code-via-xsd-into-a-jaxb-object/
 categories:

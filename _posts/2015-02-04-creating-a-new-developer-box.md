@@ -3,7 +3,6 @@ id: 96
 title: Creating a new developer box
 date: 2015-02-04T16:18:05+00:00
 author: edgriebel
-layout: post
 guid: http://www.edgriebel.com/?p=96
 permalink: /creating-a-new-developer-box/
 categories:

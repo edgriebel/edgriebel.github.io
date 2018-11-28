@@ -3,7 +3,6 @@ id: 80
 title: Learning experience with git push
 date: 2014-07-03T12:42:42+00:00
 author: edgriebel
-layout: post
 guid: http://www.edgriebel.com/?p=80
 permalink: /learning-experience-with-git-push/
 image: /wp-content/uploads/2014/07/gitlogo.jpg

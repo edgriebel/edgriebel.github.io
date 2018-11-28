@@ -1,5 +1,4 @@
 ---
-layout: post
 categories: blog
 title: Rebooting Blog and Moving to Github Pages
 ---

@@ -3,7 +3,6 @@ id: 119
 title: The technical treadmill of software development
 date: 2015-04-30T14:14:54+00:00
 author: edgriebel
-layout: post
 guid: http://www.edgriebel.com/?p=119
 permalink: /the-technical-treadmill-of-software-development/
 categories:

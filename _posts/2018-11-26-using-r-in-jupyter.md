@@ -1,5 +1,5 @@
 ---
-format: post
+title: Using R in Jupyter
 tags:
   - Jupyter
   - r-project

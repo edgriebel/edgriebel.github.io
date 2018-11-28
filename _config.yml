@@ -15,8 +15,8 @@
 # in the templates via {{ site.myvariable }}.
 title: Java Gems
 url: https://www.edgriebel.com
-name: Java Gems
-description: > # this means to ignore newlines until "baseurl:"
+name: &name Java Gems
+description: > &description # this means to ignore newlines until "baseurl:"
   Just another Jekyll site
 
 show_downloads: false
@@ -27,6 +27,8 @@ linkedin_username: edgriebel
 
 # Build settings
 markdown: kramdown
+highligher: rouge
+
 # theme: jekyll-theme-time-machine ## bug in post title uses site title
 # pretty plain! theme: jekyll-theme-slate
 # Too Minimal!! theme: jekyll-theme-minimal
@@ -36,14 +38,71 @@ markdown: kramdown
 # theme: jekyll-theme-tactile
 # theme: jekyll-theme-cayman
 # theme: jekyll-theme-modernist
-theme: jekyll-theme-leap-day
+# theme: jekyll-theme-leap-day
+# remote_theme: daattali/beautiful-jekyll
+remote_theme: mmistakes/minimal-mistakes #@4.14.1
+#
+# minimal-mistakes customizations
+#
+minimal_mistakes_skin: "air"
+title_separator: "|"
+breadcrumbs: true
+paginate: 10
+paginate_path: /page:num/
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      read_time: true
+      author_profile: true
+      share: true
+      related: true
+author:
+   name: "Ed Griebel"
+   avatar: 
+   bio: "Placeholder bio!!"
+   links:
+     - label: "GitHub"
+       icon:  "fab fa-fw fa-github"
+       url:   "https://github.com/edgriebel"
+     - label: "Resume"
+       icon:  "fab fa-fw fa-file-alt"
+       url:   "https://github.com/edgriebel/resume-cv/blob/master/Ed_Griebel_CV.pdf"
+repository: edgriebel/edgriebel.github.io
+twitter:
+   username: &twitter edgriebel
+github:
+   username: edgriebel
+linkedin:
+   username: edgriebel
+#
+# END minimal-mistakes customizations
+#
+
 repository: edgriebel/edgriebel.github.io
 
-gems:
+plugins:
   - jekyll-feed
+  - jekyll-include-cache # minimal-mistakes
+  - jekyll-paginate # minimal-mistakes
+  - jekyll-gist # minimal-mistakes
+include:
+  - _pages
 exclude:
   - Gemfile
   - Gemfile.lock
         
+# minimal-mistakes customizations
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+# END minimal-mistakes customizations
+
 # Should this be :year-:title? /:year/:month/:title? /:year/:title? /:title?
 permalink: /:categories/:year-:title/

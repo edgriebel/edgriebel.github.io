@@ -3,7 +3,6 @@ id: 158
 title: 'Yet another reason to not use IE --- Smashing Magazine'
 date: 2016-10-25T11:55:10+00:00
 author: edgriebel
-layout: post
 guid: http://www.edgriebel.com/?p=158
 permalink: /yet-another-reason-to-not-use-ie-smashing-magazine/
 categories:

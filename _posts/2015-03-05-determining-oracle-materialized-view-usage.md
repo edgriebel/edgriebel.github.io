@@ -3,7 +3,6 @@ id: 109
 title: Determining Oracle Materialized View usage
 date: 2015-03-05T21:49:41+00:00
 author: edgriebel
-layout: post
 guid: http://www.edgriebel.com/?p=109
 permalink: /determining-oracle-materialized-view-usage/
 categories:

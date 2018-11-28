@@ -3,7 +3,6 @@ id: 90
 title: Quick graphic model of a DB
 date: 2015-01-27T10:43:49+00:00
 author: edgriebel
-layout: post
 guid: http://www.edgriebel.com/?p=90
 permalink: /quick-graphic-model-of-a-db/
 categories:

@@ -3,7 +3,6 @@ id: 136
 title: Big Numbers
 date: 2016-06-15T11:42:07+00:00
 author: edgriebel
-layout: post
 guid: http://www.edgriebel.com/?p=136
 permalink: /big-numbers/
 categories:

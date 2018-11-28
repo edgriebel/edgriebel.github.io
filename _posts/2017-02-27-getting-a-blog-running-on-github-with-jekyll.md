@@ -2,7 +2,6 @@
 title: Getting a Blog running on Github with Jekyll
 date: 2017-02-27T20:00:00+00:00
 author: edgriebel
-layout: post
 permalink: /first-jekyll/
 tags:
    - blogging

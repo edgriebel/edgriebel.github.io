@@ -18,9 +18,8 @@ within various teams = this low-balling happened across all of development
 
 work environment is fast paced = your workload will be Sisyphean and your priorities will change weekly/daily
 
-and energetic = you’ll be working in an open plan office with peers that always put in 60-80 hour weeks because they’re in their early 20’s
+and energetic = you’ll be working in an open plan office with peers that always put in 60-80 hour weeks because they haven't learned the power of "no"
 
-you’ll be working on exciting projects = you’ll be working on multiple high-vis/high-pressure SCRUM teams simultaneously
+you’ll be working on exciting projects = you’ll be working on multiple high-vis/high-pressure Agile teams simultaneously
 
-cutting-edge technologies = our tech stack is totally cutting edge, just like C++ is, bruh!
-
+cutting-edge technologies = our tech stack evolves on a quarterly if not monthly basis, which compensates for working in C++

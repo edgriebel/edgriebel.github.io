@@ -3,7 +3,6 @@ id: 149
 title: 'NTLM Proxies are the Devil''s spawn'
 date: 2016-09-15T11:34:25+00:00
 author: edgriebel
-layout: post
 guid: http://www.edgriebel.com/?p=149
 permalink: /ntlm-proxies-suck/
 categories:

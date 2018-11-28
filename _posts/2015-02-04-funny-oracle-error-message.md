@@ -3,7 +3,6 @@ id: 100
 title: Funny Oracle error message
 date: 2015-02-04T15:56:40+00:00
 author: edgriebel
-layout: post
 guid: http://www.edgriebel.com/?p=100
 permalink: /funny-oracle-error-message/
 categories:

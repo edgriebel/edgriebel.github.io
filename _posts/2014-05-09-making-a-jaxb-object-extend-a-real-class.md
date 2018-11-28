@@ -3,7 +3,6 @@ id: 44
 title: 'Making a JAXB object extend a &#8220;real&#8221; class'
 date: 2014-05-09T17:14:38+00:00
 author: edgriebel
-layout: post
 guid: http://www.edgriebel.com/?p=44
 permalink: /making-a-jaxb-object-extend-a-real-class/
 categories:

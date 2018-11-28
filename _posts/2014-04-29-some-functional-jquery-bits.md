@@ -3,7 +3,6 @@ id: 33
 title: Some Functional JQuery bits
 date: 2014-04-29T12:51:43+00:00
 author: edgriebel
-layout: post
 guid: http://www.edgriebel.com/?p=33
 permalink: /some-functional-jquery-bits/
 categories:

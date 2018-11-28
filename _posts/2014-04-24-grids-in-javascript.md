@@ -3,7 +3,6 @@ id: 19
 title: Tiles in Javascript
 date: 2014-04-24T19:54:07+00:00
 author: edgriebel
-layout: post
 guid: http://www.edgriebel.com/?p=19
 permalink: /grids-in-javascript/
 categories:

@@ -3,7 +3,6 @@ id: 86
 title: 'Two Hard Things&#8230;'
 date: 2014-10-23T08:19:17+00:00
 author: edgriebel
-layout: post
 guid: http://www.edgriebel.com/?p=86
 permalink: /two-hard-things/
 categories:

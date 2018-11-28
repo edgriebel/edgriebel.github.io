@@ -3,7 +3,6 @@ id: 69
 title: Connecting to MS SQL Server with NTLM on Linux
 date: 2014-06-17T16:13:44+00:00
 author: edgriebel
-layout: post
 guid: http://www.edgriebel.com/?p=69
 permalink: /connecting-to-ms-sql-server-with-ntlm-on-linux/
 categories:

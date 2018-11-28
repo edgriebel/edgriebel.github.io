@@ -1,5 +1,4 @@
 ---
-layout: post
 categories:
   - utils
 title: Installing Synergy to share Windows and Linux
