@@ -16,8 +16,8 @@
 title: Java Gems
 url: https://www.edgriebel.com
 name: &name Java Gems
-description: > &description # this means to ignore newlines until "baseurl:"
-  Just another Jekyll site
+description: > # this means to ignore newlines until "baseurl:"
+ &description  Just another Jekyll site
 
 show_downloads: false
 
@@ -62,15 +62,18 @@ defaults:
       related: true
 author:
    name: "Ed Griebel"
-   avatar: 
+   avatar: "https://www.gravatar.com/avatar/aac3ed50382d1bf4dcc7b91b4bb94ef4?size=250"
    bio: "Placeholder bio!!"
    links:
      - label: "GitHub"
        icon:  "fab fa-fw fa-github"
        url:   "https://github.com/edgriebel"
-     - label: "Resume"
-       icon:  "fab fa-fw fa-file-alt"
+     - label: "My Resume"
+       icon:  "fas fa-file-pdf"
        url:   "https://github.com/edgriebel/resume-cv/blob/master/Ed_Griebel_CV.pdf"
+     - label: "LinkedIn"
+       icon:  "fab fa-linkedin"
+       url:   "https://www.linkedin.com/in/edgriebel"
 repository: edgriebel/edgriebel.github.io
 twitter:
    username: &twitter edgriebel
