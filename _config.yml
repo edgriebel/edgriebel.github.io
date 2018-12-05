@@ -40,7 +40,7 @@ highligher: rouge
 # theme: jekyll-theme-modernist
 # theme: jekyll-theme-leap-day
 # remote_theme: daattali/beautiful-jekyll
-remote_theme: mmistakes/minimal-mistakes #@4.14.1
+remote_theme: mmistakes/minimal-mistakes@4.14.1
 #
 # minimal-mistakes customizations
 #
@@ -89,6 +89,7 @@ repository: edgriebel/edgriebel.github.io
 
 plugins:
   - jekyll-feed
+  - jekyll-sitemap # minimal-mistakes
   - jekyll-include-cache # minimal-mistakes
   - jekyll-paginate # minimal-mistakes
   - jekyll-gist # minimal-mistakes
