@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-ruby RUBY_VERSION
+#122018# ruby RUBY_VERSION
 
 # Hello! This is where you manage which Jekyll version is used to run.
 # When you want to use a different version, change it below, save the
@@ -13,7 +13,7 @@ gem "jekyll", "~> 3.7.3"
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 #gem "minima", "~> 2.0"
-gem "minimal-mistakes-jekyll"
+#122018# gem "minimal-mistakes-jekyll"
 gem "jekyll-remote-theme"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
@@ -23,17 +23,17 @@ gem "github-pages", group: :jekyll_plugins
 # If you have any plugins, put them here!
 group :jekyll_plugins do
    # gem "jekyll-feed", "~> 0.6"
-   gem "jekyll-paginate"
-   gem "jekyll-sitemap"
-   gem "jekyll-gist"
-   gem "jekyll-feed"
-   gem "jemoji"
+   #122018# gem "jekyll-paginate"
+   #122018# gem "jekyll-sitemap"
+   #122018# gem "jekyll-gist"
+   #122018# gem "jekyll-feed"
+   #122018# gem "jemoji"
    gem "jekyll-include-cache"
-   gem "jekyll-algolia"
+   #122018# gem "jekyll-algolia"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem "therubyracer"
+#122018# gem "therubyracer"
 
