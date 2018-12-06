@@ -6,9 +6,10 @@ source "https://rubygems.org"
 #
 #     bundle exec jekyll serve
 #
-gem "jekyll", "~> 3.7.3"
 
-gem "jekyll-remote-theme"
+# These are _probably_ pulled in automatically now
+# gem "jekyll", "~> 3.7.3"
+# gem "jekyll-remote-theme"
 
 group :jekyll_plugins do
    gem "github-pages"
