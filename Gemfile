@@ -10,6 +10,8 @@ source "https://rubygems.org"
 # These are _probably_ pulled in automatically now
 # gem "jekyll", "~> 3.7.3"
 # gem "jekyll-remote-theme"
+gem "minimal-mistakes-jekyll"
+gem "minima"
 
 group :jekyll_plugins do
    gem "github-pages"
