@@ -89,6 +89,14 @@ plugins:
   - jekyll-include-cache # minimal-mistakes
   - jekyll-paginate # minimal-mistakes
   - jekyll-gist # minimal-mistakes
+
+whitelist: 
+  - jekyll-feed
+  - jekyll-sitemap # minimal-mistakes
+  - jekyll-include-cache # minimal-mistakes
+  - jekyll-paginate # minimal-mistakes
+  - jekyll-gist # minimal-mistakes
+  
 include:
   - _pages
 exclude:
