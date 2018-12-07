@@ -13,7 +13,7 @@ url: http://edgriebel.com
 name: &name Java Gems
 description: > # this means to ignore newlines until "baseurl:"
  &description  Just another Jekyll site
-
+baseurl: "/"
 show_downloads: false
 
 twitter_username: edgriebel
@@ -22,7 +22,7 @@ linkedin_username: edgriebel
 
 # Build settings
 markdown: kramdown
-highligher: rouge
+highlighter: rouge
 
 # theme: jekyll-theme-time-machine ## bug in post title uses site title
 # pretty plain! theme: jekyll-theme-slate
