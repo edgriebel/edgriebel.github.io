@@ -89,6 +89,7 @@ plugins:
   - jekyll-include-cache # minimal-mistakes
   - jekyll-paginate # minimal-mistakes
   - jekyll-gist # minimal-mistakes
+  - jekyll-remote-theme
 
 whitelist: 
   - jekyll-feed
@@ -96,12 +97,13 @@ whitelist:
   - jekyll-include-cache # minimal-mistakes
   - jekyll-paginate # minimal-mistakes
   - jekyll-gist # minimal-mistakes
+  - jekyll-remote-theme
   
 include:
   - _pages
-exclude:
-  - Gemfile
-  - Gemfile.lock
+# exclude:
+  # - Gemfile
+  # - Gemfile.lock
         
 # minimal-mistakes customizations
 category_archive:
