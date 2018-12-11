@@ -8,7 +8,7 @@
 # in the templates via {{ site.myvariable }}.
 # **but __NOT__ in front matter!!**
 
-remote_theme: "mmistakes/minimal-mistakes"
+remote_theme: "mmistakes/minimal-mistakes@4.14.1"
 title: Java Gems
 url: http://edgriebel.com
 name: Java Gems
@@ -25,17 +25,17 @@ linkedin_username: edgriebel
 markdown: kramdown
 highlighter: rouge
 
-# theme: jekyll-theme-time-machine ## bug in post title uses site title
+# unused-theme: jekyll-theme-time-machine ## bug in post title uses site title
 # pretty plain! theme: jekyll-theme-slate
 # Too Minimal!! theme: jekyll-theme-minimal
-# theme: jekyll-theme-minimal
-# theme: jekyll-theme-primer
-# theme: minima
-# theme: jekyll-theme-tactile
-# theme: jekyll-theme-cayman
-# theme: jekyll-theme-modernist
-# theme: jekyll-theme-leap-day
-# remote_theme: daattali/beautiful-jekyll # Unsupported as a remote_theme
+# unused-theme: jekyll-theme-minimal
+# unused-theme: jekyll-theme-primer
+# unused-theme: minima
+# unused-theme: jekyll-theme-tactile
+# unused-theme: jekyll-theme-cayman
+# unused-theme: jekyll-theme-modernist
+# unused-theme: jekyll-theme-leap-day
+# unused-remote_theme: daattali/beautiful-jekyll # Unsupported as a remote_theme
 
 #
 # minimal-mistakes customizations
