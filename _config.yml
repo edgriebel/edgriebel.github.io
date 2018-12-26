@@ -8,7 +8,7 @@
 # in the templates via {{ site.myvariable }}.
 # **but __NOT__ in front matter!!**
 
-remote_theme: "mmistakes/minimal-mistakes@4.14.1"
+remote_theme: mmistakes/minimal-mistakes@4.14.1
 title: Java Gems
 url: http://edgriebel.com
 name: Java Gems
