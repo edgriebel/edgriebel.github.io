@@ -75,6 +75,11 @@ twitter:
    username: &twitter edgriebel
 linkedin:
    username: edgriebel
+analytics:
+   provider: 'google-gtag'
+   google:
+     tracking_id: 'UA-50378804-1'
+     anonymize_ip: false
 #
 # END minimal-mistakes customizations
 #
