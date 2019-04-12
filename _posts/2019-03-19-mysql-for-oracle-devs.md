@@ -4,6 +4,11 @@ tags:
   - Oracle
   - MySQL
 ---
+{:right: style="float: right" width="200px"}
+![mysql](https://www.mysql.com/common/logos/powered-by-mysql-167x86.png){:width="200px"}\\
+*Not MariaDB*
+{:right}
+
 I've been using Oracle DBMS for years, and sometimes it's hard to differentiate what is an "Oracle built-in" and a standard SQL feature.
 
 In teaching a Database Modeling course at RIT in MySQL I have found out that there are some differences between Oracle and MySQL:
@@ -12,15 +17,15 @@ In teaching a Database Modeling course at RIT in MySQL I have found out that the
 
 - MySQL table names *are* case-sensitive but only on Linux.
 
-- MySQL has a lot richer set of datatypes, especially for integer types: `tinyint`, `smallint`, `mediumint`, `int`, and `bigint`
+- MySQL has a richer set of datatypes, especially for integer types: `tinyint`, `smallint`, `mediumint`, `int`, and `bigint`, but is missing `BLOB`/`CLOB` and native(-ish) XML.
 
 - Single and double-quotes are allowed for string literals (but cannot be mixed).
 
 - Executing queries in an Oracle database are done by specifying the database name in the connect string. MySQL supports the `USE` command to choose a database to run.
 
-- There are a lot fewer functions available than in Oracle (which is a potential series of blog posts, an-oracle-function-a-day).
+- There are a lot fewer functions available than in Oracle (which someone could write a an-oracle-function-a-day series and have material for over a year).
 
-- Constratints in DDL are supported but ignored before MySQL 8.
+- `CHECK` constraints are "supported" in DDL but before MySQL 8 is only verified to be syntatically correct.
 
 - `MINUS` is not supported
 
