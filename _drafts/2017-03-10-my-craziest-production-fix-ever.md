@@ -1,29 +1,33 @@
 ---
-layout: post
+title: My Craziest Production Fix Ever!
 tags:
   - c
   - trading-floor
   - war-story
+  - hacks
 ---
 
-* Trading floor, ST bond/repo desk at a small trading shop
+I used to work on a trading floor for the short term bond/repo desk some time ago at a small buy-side firm.
+My job was to create and maintain command-line and GUI applications written in C (_definitely_ some time ago).
+There was a bug in an application that was caused by a problem in a string.
+Fixing the string in the source code would have required a code edit and a recompile. 
+This would have taken at minimum a half-hour, where time really is money and the fix was needed *right now*.
 
-* c program on Unix (SunOS 4)
+Because the users needed the fix as soon as possible, I reviewed 
+with the head of the desk and responsible development manager 
+the half-hour option, as well as a more expedient option. 
 
-* problem caused by bug in c-style string
+Since we could contain the risk by making a copy of the executable, and because it was used only by this trading desk, 
+the expedient solution was chosen.
 
-* Build of system would have required 30+ minutes
+Emacs is well known to safely binary files because it doesn't add characters (e.g. trailing newline, word-wrapping, etc.),
+I brought up the executable in Emacs; the fix only required substituting a smaller string for the existing one.
+I searched for the string in the file (`C-x C-f`) and made the change. `nul` characters were added at the end of the new string, 
+making sure that I had the exact same number of characters including the original trailing `nul`. 
 
-* mention it was trading floor?
+After making sure that the file was the same size, I crossed my fingers while saving the file (`C-x C-s`) over the original one and had one
+of the traders restart the application.  (Other traders already running the app weren't affected because the original version was still at
+the same inode.)
 
-* Brought up binary in emacs, made change to string in binary editor (emacs) and zero-padded removed characters
-
-* Crossed my fingers when I pressed C-x C-s
-
-* Had users launch program
-
-* Program worked!
-
-* Hero for a day (or at least until the market close) and known as go-to guy for problems
-
-
+The app started fine and the bug was fixed, so the other traders restarted theirs and had no problems either. 
+Because I fixed this problem in about 5 minutes I was hero for a day and became known as a go-to guy for problems.
