@@ -23,12 +23,15 @@ In teaching a Database Modeling course at RIT in MySQL I have found out that the
 
 - Executing queries in an Oracle database are done by specifying the database name in the connect string. MySQL supports the `USE` command to choose a database to run.
 
-- There are a lot fewer functions available than in Oracle (which someone could write a an-oracle-function-a-day series and have material for over a year).
+- There are a lot fewer functions available than in Oracle (which someone could write a an-oracle-function-a-day series and have a year's worth of material).
 
-- `CHECK` constraints are "supported" in DDL but before MySQL 8 is only verified to be syntatically correct.
+- `CHECK` constraints are "supported" in DDL but before MySQL 8 are only verified to be syntatically correct.
 
-- `MINUS` is not supported
+- `MINUS` is not supported, but can be simulated with `NOT IN (<subquery>)`
 
+- Concatenation operator `||` isn't supported, must use `CONCAT()`. 
+  MySQL allows string literals to be concatenated without operators (`SELECT 'foo' 'bar';`).
+  
 - tables can be aliased by backticks with or without the `AS` keyword because " and ' are both allowed for string literals.
 Oracle lets you use a `"quoted"` value for a table alias without `AS`, for example `SELECT 'foo' AS foo_col, 'bar' "bar_col" FROM dual;`
 
@@ -37,3 +40,9 @@ Oracle lets you use a `"quoted"` value for a table alias without `AS`, for examp
 - Joins inside nested queries need to have unique column names in MySQL. Oracle will rename the columns (generally by appending "\_1" to the duplicate column name) but an error is returned.
 For instance, given tables **STOCKTRADES(cusip, price, trade_date, commission)** and **BONDTRADES(cusip, price, trade_date, commission)**.
 In Oracle, `SELECT count(*) FROM (SELECT * FROM stocktrades UNION SELECT * FROM bondtrades) AS all_trades;`
+
+- `NVL()` is not supported, use `COALESCE()` instead
+
+- Good summary is at [this SlideShare][1] but it's sometimes not clear what the original Oracle analog would be and it's a little dated.
+
+[1]: https://www.slideshare.net/ronaldbradford/mysql-for-oracle-developers
